@@ -58,7 +58,7 @@ li {
 
 h1 {
   font-size: 56px;
-  color: #7342d6;
+  color: #3449d4;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -78,7 +78,7 @@ button:active {
 }
 
 .btn {
-  background-color: #7342d6;
+  background-color: #3449d4;
   color: white;
   padding: 12px 24px;
   font-size: 20px;
@@ -87,7 +87,7 @@ button:active {
 }
 
 .purple {
-  color: #7342d6;
+  color: #3449d4;
 }
 
 .logo {
@@ -109,7 +109,7 @@ button:active {
   font-size: 20px;
   font-weight: bold;
   padding: 8px;
-  color: #7342d6;
+  color: #3449d4;
 }
 
 .nav__list {
@@ -124,7 +124,7 @@ button:active {
 }
 
 .nav__link--primary {
-  border: 2px solid #7342d6;
+  border: 2px solid #3449d4;
   border-radius: 4px;
 }
 
@@ -136,7 +136,7 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #7342d6;
+  color: #3449d4;
   font-size: 20px;
   position: relative;
   margin-left: 8px;
@@ -162,7 +162,7 @@ button:active {
   background-color: transparent;
   font-size: 32px;
   border: none;
-  color: #7342d6;
+  color: #3449d4;
   display: none;
 }
 
@@ -230,6 +230,7 @@ LANDING
 
 header {
   height: calc(100vh - 80px);
+  background: rgb(225, 241, 255);
 }
 
 .header__container {
@@ -337,8 +338,8 @@ HIGHLIGHTS
 }
 
 .highlight__img {
-  border: 2px solid #7342d65d;
-  color: #7342d6;
+  border: 2px solid #3449d45d;
+  color: #3449d4;
   width: 100px;
   height: 100px;
   display: flex;
@@ -540,7 +541,7 @@ select {
   justify-content: center;
   padding-top: 60px;
   font-size: 60px;
-  color: #7342d6;
+  color: #3449d4;
 }
 
 .fa-spinner {
@@ -648,7 +649,7 @@ select {
 */
 
 .cart__header {
-  background-color: #7342d6;
+  background-color: #3449d4;
   margin: 0 24px;
   padding: 8px 16px;
   color: white;
@@ -741,7 +742,7 @@ select {
 }
 
 .total__sub-total {
-  border-top: 2px solid #7342d6;
+  border-top: 2px solid #3449d4;
   padding-top: 24px;
 }
 
