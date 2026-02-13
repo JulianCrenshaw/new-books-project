@@ -2,9 +2,15 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div>
-      
+<section id="features">
+  <div className="container">
+    <div className="row">
+      <h2 className="section__title">
+        Features <span className="blue">Books</span>
+      </h2>
     </div>
+  </div>
+</section>
   )
 }
 
