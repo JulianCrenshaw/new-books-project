@@ -3,15 +3,10 @@ import React from "react";
 
 const book = ({ book }) => {
   return (
-    <div className="books">
       <div className="book">
         <a href="">
           <figure className="book__img--wrapper">
-            <img
-              src="book.url"
-              alt=""
-              className="book__img"
-            />
+            <img src="book.url" alt="" className="book__img" />
           </figure>
         </a>
         <div className="book__atitle">
@@ -27,11 +22,16 @@ const book = ({ book }) => {
           <FontAwesomeIcon icon="star-half-alt" />
         </div>
         <div className="book__price">
-          '<span className="book__price--normal">${book.originalPrice}</span>
-          ${book.salePrice}
+          {book.salePrice ? (
+            <>
+              <span className="book__price--normal">${book.originalPrice}</span>
+              ${book.salePrice}
+            </>
+          ) : (
+            "null"
+          )}
         </div>
       </div>
-    </div>
   );
 };
 
