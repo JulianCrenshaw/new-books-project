@@ -7,9 +7,9 @@ const Discounted = () => {
     <section id="recent">
       <div className="container">
         <div className="row">
-          <div className="section__title">
-            Discounted <span className="blue"></span>
-          </div>
+          <h2 className="section__title">
+            Discounted <span className="blue">Books</span>
+          </h2>
           <div className="books">
             {books.map((book) => (
               <Book book={book} key={book.id} />
