@@ -1,4 +1,5 @@
 import React from 'react'
+import { books } from '../data'
 
 const Discounted = () => {
   return (
@@ -9,7 +10,7 @@ const Discounted = () => {
             Discounted <span className="blue"></span>
         </div>
         <div className="books">
-            
+        
         </div>
     </div>
 </div>
