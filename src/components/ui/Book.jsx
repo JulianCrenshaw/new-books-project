@@ -10,7 +10,7 @@ const book = ({ book }) => {
             <img src={book.url} alt="" className="book__img" />
           </figure>
         </a>
-        <div className="book__atitle">
+        <div className="book__title">
           <a href="/" className="book__title--link">
             {book.title}
           </a>
