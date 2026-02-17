@@ -2,7 +2,7 @@ import React from 'react'
 
 const Explore = () => {
   return (
-   <secrion id="explore">
+   <section id="explore">
     <div className="container">
         <div className="row row__column">
             <h2 className="section__title">
@@ -12,7 +12,7 @@ const Explore = () => {
             <button className="btn">Explore books</button></a>
         </div>
     </div>
-   </secrion>
+   </section>
   )
 }
 
