@@ -15,7 +15,7 @@ const book = ({ book }) => {
             {book.title}
           </a>
         </div>
-        <div className="book__rating">
+        <div className="book__ratings">
          {
           new Array(Math.floor(book.rating)).fill(0).map((_, index) => <FontAwesomeIcon icon="star" key={index} />)
          }
