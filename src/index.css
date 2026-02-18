@@ -75,12 +75,10 @@ button {
 
 button:active {
   transform: translateY(1px);
-  color: #bfbfbf;
-  border-radius: 20px;
 }
 
 button:hover {
-    color: #bfbfbf;
+  color: #bfbfbf;
   border-radius: 20px;
 }
 
