@@ -79,6 +79,11 @@ button:active {
   border-radius: 20px;
 }
 
+button:hover {
+    color: #bfbfbf;
+  border-radius: 20px;
+}
+
 .btn {
   background-color: #3449d4;
   color: white;
