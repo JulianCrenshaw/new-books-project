@@ -12,6 +12,9 @@ const Books = ({ books: initialBooks }) => {
         if (filter === 'HIGH_TO_LOW') {
             setBooks(books.slice().sort((a, b) => (b.salePrice || b.OriginalPrice) - (a.saleprice || a.originalPrice)))
         }
+        if (filter === 'RATING') {
+            setBooks(books.slice().sort((a, b) => (b.rating || a.rating)))
+        }
     }
   return (
     <div id="books__body">
