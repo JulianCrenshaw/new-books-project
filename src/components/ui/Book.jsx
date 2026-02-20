@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 import Rating from "./Rating";
-import Price from " ./Price"
+import Price from "./Price";
+
 
 const book = ({ book }) => {
   return (
@@ -18,7 +19,7 @@ const book = ({ book }) => {
         </Link>
       </div>
       <Rating rating={book.rating} />
-      <Price salePrice={book.salePrice} originalPrice={originalPrice} />
+     <Price salePrice={book.salePrice} originalPrice={book.originalPrice} />
     </div>
   );
 };
