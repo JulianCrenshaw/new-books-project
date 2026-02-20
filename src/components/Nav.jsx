@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LibraryLogo from '../assets/Library.svg';
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Nav = () => {
   function openMenu () {
@@ -13,9 +14,9 @@ const Nav = () => {
   return (
     <nav>
       <div className="nav__container">
-        <a href="/">
+        <Link to="/">
           <img src={LibraryLogo} alt="" className="logo" />
-        </a>
+        </Link>
         <ul className="nav__links">
           <li className="nav__list">
             <a href="/" className="nav__link">
@@ -23,7 +24,7 @@ const Nav = () => {
             </a>
           </li>
           <li className="nav__list">
-            <a href="/" className="nav__link">
+            <a href="/books" className="nav__link">
               Books
             </a>
           </li>
