@@ -28,7 +28,7 @@ const BookInfo = ({ books }) => {
                     <div className="book__selected--price">
                     <Price originalPrice={50} salePrice={20} />
                     </div>
-                    <div className="book__summary">a book about a great deal of practicing how to achieve success in a interview</div>
+                    <div className="book__summary">a book about a great deal of practice in how to achieve success in a interview</div>
                 </div>
             </div>
           </div>
