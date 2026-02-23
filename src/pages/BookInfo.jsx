@@ -28,7 +28,7 @@ const BookInfo = ({ books }) => {
                     <div className="book__selected--price">
                     <Price originalPrice={50} salePrice={20} />
                     </div>
-                    <div className="book__summary">An amazing book about a great deal of practice in how to achieve success in a interview for a coding job near your location weather if it is long term or short term. More books like these are availabe below!</div>
+                    <div className="book__summary">An amazing book about a great deal of practice in how to achieve success in a interview for a coding job near your location weather if it is long term or short term. More books like this are availabe below!</div>
                 </div>
             </div>
           </div>
