@@ -5,7 +5,7 @@ import Rating from "./Rating";
 import Price from "./Price";
 
 
-const book = ({ book }) => {
+const Book = ({ book }) => {
   return (
     <div className="book">
       <Link to={`/books/${book.id}`}>
@@ -24,4 +24,4 @@ const book = ({ book }) => {
   );
 };
 
-export default book;
+export default Book;
