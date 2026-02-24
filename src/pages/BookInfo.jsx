@@ -19,25 +19,51 @@ const BookInfo = ({ books }) => {
               </Link>
             </div>
             <div className="book__selected">
-                <figure className="book__selected--figure">
-                    <img src="https://m.media-amazon.com/images/I/61mIq2iJUXL._AC_UF1000,1000_QL80_.jpg" alt="" className="book__selected--img" />
-                </figure>
-                <div className="book__selected--description">
-                    <h2 className="book__selected--title">Crack the Coding Interview</h2>
-                    <Rating rating="4.5" />
-                    <div className="book__selected--price">
-                    <Price originalPrice={50} salePrice={20} />
-                    </div>
-                    <div className="book__summary">
-                      <div className="book__summary--title">
-                        Summary
-                      </div>
-                      <p className="book__summary--para">
-                        An amazing book about a great deal of practice in how to achieve success in a interview for a coding job near your location weather if it is long term or short term. More books like this are availabe below!
-                      </p>
-                    </div>
+              <figure className="book__selected--figure">
+                <img
+                  src="https://m.media-amazon.com/images/I/61mIq2iJUXL._AC_UF1000,1000_QL80_.jpg"
+                  alt=""
+                  className="book__selected--img"
+                />
+              </figure>
+              <div className="book__selected--description">
+                <h2 className="book__selected--title">
+                  Crack the Coding Interview
+                </h2>
+                <Rating rating="4.5" />
+                <div className="book__selected--price">
+                  <Price originalPrice={50} salePrice={20} />
                 </div>
+                <div className="book__summary">
+                  <div className="book__summary--title">Summary</div>
+                  <p className="book__summary--para">
+                    An amazing book about a great deal of practice in how to
+                    achieve success in a interview for a coding job near your
+                    location weather if it is long term or short term. More
+                    books like this are availabe below!
+                  </p>
+                  <p className="book__summary--para">
+                    An amazing book about a great deal of practice in how to
+                    achieve success in a interview for a coding job near your
+                    location weather if it is long term or short term. More
+                    books like this are availabe below!
+                  </p>
+                </div>
+                <button className="btn">
+                  Add to cart
+                </button>
+              </div>
             </div>
+          </div>
+        </div>
+        <div className="books__container">
+          <div className="row">
+            <div className="book__selected--top">
+              <h2 className="book__selected--title--top">
+                Recommended Books
+              </h2>
+            </div>
+            
           </div>
         </div>
       </main>
