@@ -11,6 +11,11 @@ import { useState } from 'react';
 
 function App() {
   const [cart, setCart] = useState([])
+
+function addToCart() {
+  console.log('add to cart')
+}
+
   return (
     <Router>
     <div className="App">
