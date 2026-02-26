@@ -6,9 +6,11 @@ import Books from './pages/Books';
 import { books } from "./data"
 import BookInfo from './pages/BookInfo';
 import Cart from './pages/Cart';
+import { useState } from 'react';
 
 
 function App() {
+  const [cart, setCart] = useState([])
   return (
     <Router>
     <div className="App">
