@@ -24,9 +24,15 @@ const Cart = () => {
                       alt=""
                     />
                     <div className="cart__book--info">
-                        <sman className="cart__book--title">
+                        <span className="cart__book--title">
                             Crack the Coding Interview
-                        </sman>
+                        </span>
+                        <span className="cart__book--price">
+                            10.00
+                        </span>
+                        <button className="cart__book--remove">
+                            Remove
+                        </button>
                     </div>
                   </div>
                 </div>
