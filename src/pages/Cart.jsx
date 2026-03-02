@@ -22,13 +22,14 @@ const Cart = ({ cart }) => {
                       <div className="cart__book">
                         <img
                           src={book.url}
+                          className="cart__book--img"
                           alt=""
                         />
                         <div className="cart__book--info">
                           <span className="cart__book--title">
                             {book.title}
                           </span>
-                          <span className="cart__book--price">${(book.salePrice || book.originalPrice)}</span>
+                          <span className="cart__book--price">${(book.salePrice || book.originalPrice).toFixed(2)}</span>
                           <button className="cart__book--remove">Remove</button>
                         </div>
                       </div>
