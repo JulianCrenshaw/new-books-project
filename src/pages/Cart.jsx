@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cart = ({cart}) => {
+const Cart = ({ cart }) => {
   return (
     <div id="books__body">
       <main id="books__main">
@@ -16,48 +16,55 @@ const Cart = ({cart}) => {
                 <span className="cart__total">Price</span>
               </div>
               <div className="cart__body">
-                <div className="cart__item">
-                  <div className="cart__book">
-                    <img
-                      src="https://m.media-amazon.com/images/I/61mIq2iJUXL._AC_UF1000,1000_QL80_.jpg"
-                      className="cart__book--img"
-                      alt=""
-                    />
-                    <div className="cart__book--info">
-                        <span className="cart__book--title">
-                            Crack the Coding Interview
-                        </span>
-                        <span className="cart__book--price">
-                            10.00
-                        </span>
-                        <button className="cart__book--remove">
-                            Remove
-                        </button>
+                {cart.map((book) => {
+                  return (
+                    <div className="cart__item">
+                      <div className="cart__book">
+                        <img
+                          src={book.url}
+                          alt=""
+                        />
+                        <div className="cart__book--info">
+                          <span className="cart__book--title">
+                            {book.title}
+                          </span>
+                          <span className="cart__book--price">${(book.salePrice || book.originalPrice)}</span>
+                          <button className="cart__book--remove">Remove</button>
+                        </div>
+                      </div>
+                      <div className="cart__quantity">
+                        <input
+                          type="number"
+                          min={0}
+                          max={99}
+                          className="cart__input"
+                        />
+                      </div>
+                      <div className="cart__total">10.00</div>
                     </div>
-                  </div>
-                  <div className="cart__quantity">
-                    <input type="number" min={0} max={99} className="cart__input" />
-                  </div>
-                  <div className="cart__total">
-                    10.00
-                  </div>
-                </div>
+                  );
+                })}
               </div>
             </div>
             <div className="total">
-                <div className="total__item total__sub-total">
-                    <span>Subtotal</span>
-                    <span>9.00</span>
-                </div>
-                <div className="total__item total__sub-tax">
-                    <span>Tax</span>
-                    <span>1.00</span>
-                </div>
-                <div className="total__item total__sub-price">
-                    <span>Total</span>
-                    <span>10.00</span>
-                </div>
-                <button className="btn btn__checkout no-cursor" onClick={() => alert(`havent finished`)}>Proceed to Checkout</button>
+              <div className="total__item total__sub-total">
+                <span>Subtotal</span>
+                <span>9.00</span>
+              </div>
+              <div className="total__item total__sub-tax">
+                <span>Tax</span>
+                <span>1.00</span>
+              </div>
+              <div className="total__item total__sub-price">
+                <span>Total</span>
+                <span>10.00</span>
+              </div>
+              <button
+                className="btn btn__checkout no-cursor"
+                onClick={() => alert(`havent finished`)}
+              >
+                Proceed to Checkout
+              </button>
             </div>
           </div>
         </div>
