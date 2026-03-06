@@ -8,6 +8,10 @@ const Cart = ({ cart, changeQuantity }) => {
     })
     return price.toFixed(2)
   }
+  const subtotal = total();
+  const tax = (subtotal * 0.1).toFixed(2)
+  const totalPrice = (Number(subtotal) +
+  Number(tax)).toFixed(2)
   return (
     <div id="books__body">
       <main id="books__main">
@@ -25,7 +29,7 @@ const Cart = ({ cart, changeQuantity }) => {
               <div className="cart__body">
                 {cart.map((book) => {
                   return (
-                    <div className="cart__item" >
+                    <div className="cart__item" key={book.id}>
                       <div className="cart__book">
                         <img
                           src={book.url}
