@@ -1,15 +1,15 @@
 import React from "react";
 
-const Cart = ({ cart, changeQuantity }) => {
+const Cart = ({ cart, changeQuantity, removeFromCart}) => {
   const total = () => {
     let price = 0;
     cart.forEach(item => {
-      price += (item.salePrice || item.originalPrice)* item.quantity;
+      price += (item.salePrice || item.originalPrice) * item.quantity;
     })
     return price.toFixed(2)
   }
   const subtotal = Number(total());
-  const tax = (subtotal * 0.8).toFixed(2)
+  const tax = (subtotal * 0.1).toFixed(2)
   const totalPrice = (subtotal +
   Number(tax)).toFixed(2)
   return (
@@ -43,7 +43,7 @@ const Cart = ({ cart, changeQuantity }) => {
                           <span className="cart__book--price">
                             ${(book.salePrice || book.originalPrice).toFixed(2)}
                           </span>
-                          <button className="cart__book--remove">Remove</button>
+                          <button  className="cart__book--remove" onClick={() => removeFromCart(book)}>Remove</button>
                         </div>
                       </div>
                       <div className="cart__quantity">

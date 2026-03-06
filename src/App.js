@@ -23,9 +23,13 @@ function App() {
               ...item,
               quantity: +quantity,
             }
-          : item
-      )
+          : item,
+      ),
     );
+  }
+
+  function removeFromCart(book) {
+    setCart(cart.filter((item) => item.id !== book.id));
   }
 
   useEffect(() => {
@@ -40,12 +44,19 @@ function App() {
         <Route path="/books" exact render={() => <Books books={books} />} />
         <Route
           path="/books/:id"
-          render={() => <BookInfo books={books} addToCart={addToCart} cart={cart}/>}
+          render={() => (
+            <BookInfo books={books} addToCart={addToCart} cart={cart} />
+          )}
         />
         <Route
           path="/cart"
           render={() => (
-            <Cart books={books} cart={cart} changeQuantity={changeQuantity} />
+            <Cart
+              books={books}
+              cart={cart}
+              changeQuantity={changeQuantity}
+              removeFromCart={removeFromCart}
+            />
           )}
         />
         <Footer />
