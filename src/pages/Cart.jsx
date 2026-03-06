@@ -4,9 +4,9 @@ const Cart = ({ cart, changeQuantity }) => {
   const total = () => {
     let price = 0;
     cart.forEach(item => {
-      price += (item.salePrice || item.originalPrice).toFixed(2);
+      price += (item.salePrice || item.originalPrice)* item.quantity;
     })
-    return price
+    return price.toFixed(2)
   }
   return (
     <div id="books__body">
@@ -25,7 +25,7 @@ const Cart = ({ cart, changeQuantity }) => {
               <div className="cart__body">
                 {cart.map((book) => {
                   return (
-                    <div className="cart__item">
+                    <div className="cart__item" >
                       <div className="cart__book">
                         <img
                           src={book.url}
