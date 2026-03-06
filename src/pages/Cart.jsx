@@ -8,9 +8,9 @@ const Cart = ({ cart, changeQuantity }) => {
     })
     return price.toFixed(2)
   }
-  const subtotal = total();
+  const subtotal = Number(total());
   const tax = (subtotal * 0.8).toFixed(2)
-  const totalPrice = (Number(subtotal) +
+  const totalPrice = (subtotal +
   Number(tax)).toFixed(2)
   return (
     <div id="books__body">
