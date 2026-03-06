@@ -9,7 +9,7 @@ const Cart = ({ cart, changeQuantity }) => {
     return price.toFixed(2)
   }
   const subtotal = total();
-  const tax = (subtotal * 0.1).toFixed(2)
+  const tax = (subtotal * 0.8).toFixed(2)
   const totalPrice = (Number(subtotal) +
   Number(tax)).toFixed(2)
   return (
@@ -70,15 +70,15 @@ const Cart = ({ cart, changeQuantity }) => {
             <div className="total">
               <div className="total__item total__sub-total">
                 <span>Subtotal</span>
-                <span>9.00</span>
+                <span>${subtotal}</span>
               </div>
               <div className="total__item total__sub-tax">
                 <span>Tax</span>
-                <span>1.00</span>
+                <span>${tax}</span>
               </div>
               <div className="total__item total__sub-price">
                 <span>Total</span>
-                <span>${total()}</span>
+                <span>${totalPrice}</span>
               </div>
               <button
                 className="btn btn__checkout no-cursor"
