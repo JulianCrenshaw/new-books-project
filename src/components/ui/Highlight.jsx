@@ -14,4 +14,4 @@ const Highlight = ({ icon, title, para }) => {
   )
 }
 
-export default Highlight
+export default Highlight;
