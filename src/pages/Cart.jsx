@@ -28,8 +28,8 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
               </div>
               <div className="cart__body">
                 {cart.length === 0 ? (
-                  <div className="cart__empty">
-                    <img src={emptyCart} alt="Empty Cart" className="cart__empty--img" />You have no items here!!</div>
+                  <h2 className="cart__empty">
+                    <img src={emptyCart} alt="Empty Cart" className="cart__empty--img" />You have no items here!!</h2>
                 ) : (
                   cart.map((book) => {
                     return (
