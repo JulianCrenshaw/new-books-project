@@ -1,5 +1,6 @@
 import React from "react";
-import emptyCart from '../assets/empty_cart.svg';
+import emptyCart from "../assets/empty_cart.svg";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Cart = ({ cart, changeQuantity, removeFromCart }) => {
   const total = () => {
@@ -29,7 +30,13 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
               <div className="cart__body">
                 {cart.length === 0 ? (
                   <h2 className="cart__empty">
-                    <img src={emptyCart} alt="Empty Cart" className="cart__empty--img" />You have no items here!!</h2>
+                    <img
+                      src={emptyCart}
+                      alt="Empty Cart"
+                      className="cart__empty--img"
+                    />
+                    You have no items here!!
+                  </h2>
                 ) : (
                   cart.map((book) => {
                     return (
@@ -96,12 +103,18 @@ const Cart = ({ cart, changeQuantity, removeFromCart }) => {
                 <span>Total</span>
                 <span>${totalPrice}</span>
               </div>
-              <button
-                className="btn btn__checkout no-cursor"
-                onClick={() => alert(`havent finished`)}
-              >
-                Proceed to Checkout
-              </button>
+              {cart.length === 0 ? (
+                <Link to="/books">
+                  <button className="btn btn__checkout">Explor Books</button>
+                </Link>
+              ) : (
+                <button
+                  className="btn btn__checkout no-cursor"
+                  onClick={() => alert(`havent finished`)}
+                >
+                  Proceed to Checkout
+                </button>
+              )}
             </div>
           </div>
         </div>
